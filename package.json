@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc -w",
+    "start": "lite-server",
+    "dev": "npm start & tsc -w",
     "lint": "eslint './src/**/*.ts'",
     "lint:fix": "eslint './src/**/*.ts' --fix",
     "prepare": "husky install"
@@ -19,6 +20,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "husky": "6.0.0",
+    "lite-server": "2.6.1",
     "prettier": "2.3.0",
     "typescript": "4.2.4"
   }
